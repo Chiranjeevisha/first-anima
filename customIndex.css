@@ -1,0 +1,116 @@
+.BackgroundImg {
+  background-image: url(./images/Road-3.jpg);
+  max-width: 100%;
+  height: 100vh;
+}
+.sun {
+  position: absolute;
+  bottom: 90%;
+  top: 0%;
+  left: 50%;
+  filter: blur(30px);
+  animation-name: sun-in-sky;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+}
+@keyframes sun-in-sky {
+  0% {
+    transform: scale(0.2);
+  }
+
+  100% {
+    transform: scale(0.3);
+  }
+}
+.cloud-1 {
+  position: absolute;
+  top: 0%;
+  left: 65%;
+  animation-name: cloud-1-in-sky;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+  background-image: url(./images/);
+}
+@keyframes cloud-1-in-sky {
+  0% {
+    left: -280px;
+    top: 0px;
+  }
+
+  100% {
+    left: 1100px;
+    top: 0px;
+  }
+}
+.cloud-2 {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  animation-name: cloud-2-in-sky;
+  animation-duration: 18s;
+  animation-timing-function: linear;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+  background-image: url(./images/);
+}
+@keyframes cloud-2-in-sky {
+  0% {
+    left: -280px;
+    top: 0px;
+    bottom: 100px;
+  }
+
+  100% {
+    left: 1180px;
+    top: 0px;
+    bottom: 100px;
+  }
+}
+.cloud-3 {
+  position: absolute;
+  top: 30%;
+  left: 80%;
+  animation-name: cloud-3-in-sky;
+  animation-duration: 25s;
+  animation-timing-function: linear;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+  background-image: url(./images/);
+}
+@keyframes cloud-3-in-sky {
+  0% {
+    left: -280px;
+    top: 100px;
+  }
+
+  100% {
+    left: 1150px;
+    top: 100px;
+  }
+}
+.car {
+  position: absolute;
+  top: 71%;
+  left: 0%;
+  animation-name: car-in-road;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+}
+@keyframes car-in-road {
+  0% {
+    left: -280px;
+    top: 280px;
+  }
+  100% {
+    left: 1150px;
+    top: 290px;
+  }
+}
